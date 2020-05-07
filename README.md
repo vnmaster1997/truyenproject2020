@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Material Dashboard Angular - Free Bootstrap Material Design Admin](https://www.creative-tim.com/product/material-dashboard-angular2)[![version][version-badge]][CHANGELOG]
 
 ![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-angular/material-dashboard-angular.gif)
@@ -246,3 +247,6 @@ Instagram: <https://www.instagram.com/CreativeTimOfficial>
 [CHANGELOG]: ./CHANGELOG.md
 
 [version-badge]: https://img.shields.io/badge/version-2.4.0-blue.svg
+=======
+# truyenproject2020
+>>>>>>> d9d67e2a2ea2fd5c8df96837ede95a3530d42063
