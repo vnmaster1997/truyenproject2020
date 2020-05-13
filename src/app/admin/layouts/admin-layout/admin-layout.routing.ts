@@ -10,12 +10,15 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: '', children: [
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        { path: 'dashboard',      component: DashboardComponent },
+        { path: 'user-profile',   component: UserProfileComponent },
+        { path: 'table-list',     component: TableListComponent },
+        { path: 'typography',     component: TypographyComponent },
+        { path: 'icons',          component: IconsComponent },
+        { path: 'maps',           component: MapsComponent },
+        { path: 'notifications',  component: NotificationsComponent },
+        { path: 'upgrade',        component: UpgradeComponent },
+    ]},
 ];
