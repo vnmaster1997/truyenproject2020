@@ -1,3 +1,4 @@
+import { HomeLayoutComponent } from './main/layouts/home-layout/home-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -6,22 +7,22 @@ import { RouterModule } from '@angular/router';
 
 
 import { AppRoutingModule } from './app.routing';
-import { ComponentsModule } from './components/components.module';
+import { ComponentsModule } from './admin/components/components.module';
 
 import { AppComponent } from './app.component';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { TableListComponent } from './table-list/table-list.component';
-import { TypographyComponent } from './typography/typography.component';
-import { IconsComponent } from './icons/icons.component';
-import { MapsComponent } from './maps/maps.component';
-import { NotificationsComponent } from './notifications/notifications.component';
-import { UpgradeComponent } from './upgrade/upgrade.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { UserProfileComponent } from './admin/user-profile/user-profile.component';
+import { TableListComponent } from './admin/table-list/table-list.component';
+import { TypographyComponent } from './admin/typography/typography.component';
+import { IconsComponent } from './admin/icons/icons.component';
+import { MapsComponent } from './admin/maps/maps.component';
+import { NotificationsComponent } from './admin/notifications/notifications.component';
+import { UpgradeComponent } from './admin/upgrade/upgrade.component';
 import {
   AgmCoreModule
 } from '@agm/core';
-import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AdminLayoutComponent } from './admin/layouts/admin-layout/admin-layout.component';
 
 @NgModule({
   imports: [
@@ -34,12 +35,12 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    })
+    }),
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-
+    HomeLayoutComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
